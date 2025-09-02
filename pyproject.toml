@@ -1,5 +1,5 @@
 [project]
-name = "xiyan_mcp_server"
+name = "iflow-mcp_xiyan_mcp_server"
 version = "0.1.5.dev0"
 description = "A Model Context Protocol (MCP) server that utilizes XiyanSQL with databases. This server enables AI assistants to list tables, read data, and execute natural language queries"
 readme = "README.md"
@@ -21,3 +21,5 @@ build-backend = "hatchling.build"
 
 [project.scripts]
 mysql_mcp_server = "xiyan_mcp_server:main"
+[tool.hatch.build.targets.wheel]
+packages = ["src/xiyan_mcp_server"]
